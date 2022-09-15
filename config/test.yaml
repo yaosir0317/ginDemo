@@ -1,0 +1,32 @@
+env: "test"
+service_name: "holmes"
+http:
+  host: ""
+  port: 27017
+mysql:
+  user: "testdb"
+  password: "123456"
+  addr: "127.0.0.1:3306"
+  db_name: "holmes"
+  max_open: 5
+  max_idle: 5
+redis:
+  addr: "127.0.0.1:6379"
+  password: "jY7JaA9M/ny=>Lt/"
+  poll_size: 5
+  db: 10
+kafka:
+  brokers:
+    - "127.0.0.1:9092"
+  topics:
+    - "test_strategy_visit"
+    - "test_strategy"
+    - ""
+  group: "test_group"
+  version: "0.10.2.0"
+log:
+  level: "INFO"
+  filename: "log"
+  maxsize: "256"
+  max_age: ""
+  max_backups: 7
